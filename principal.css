@@ -23,3 +23,9 @@ textinho{
 desc{
     color: #a6a6a6;
 }
+fimPagina{
+    background-color: black;
+    txt{
+        color: white;
+    }
+}

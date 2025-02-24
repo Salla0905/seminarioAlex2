@@ -10,5 +10,16 @@ header{
 }
 card{
     display: inline-flex;
-    background-color: rgb(D9, D9, D9);
+    flex-direction: column;
+    background-color: #D9D9D9;
+}
+cards{
+    display: inline-flex;
+    justify-content: space-around;
+}
+textinho{
+    color: white;
+}
+desc{
+    color: #a6a6a6;
 }

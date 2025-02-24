@@ -3,25 +3,69 @@
     padding: 0;
 }
 h1{
-
+    text-align: center;
+}
+h2{
+    margin-left: 75px;
+    font-size: 2rem;
+    margin-bottom: 50px
 }
 header{
     background-color: rgb(93, 93, 93)
 }
+modelo{
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    img{
+        width: 750px;
+    }
+}
 card{
     display: inline-flex;
     flex-direction: column;
+    align-items: center;
     background-color: #D9D9D9;
+    height: 400px;
+    width: 250px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    .roupa{
+        height: 50%;
+    }
+    desc{
+        margin-bottom: 20px;
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        color: #a6a6a6;
+    }
+    titulo{
+        font-size: 1.5rem;
+    }
+    .estrela{
+        margin: 10px
+    }
 }
 cards{
     display: inline-flex;
     justify-content: space-around;
+    width: 100%;
 }
 textinho{
     color: white;
 }
-desc{
-    color: #a6a6a6;
+botao{
+    background-color: black;
+    color: white;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    width: 100px;
+    height: 40px;
 }
 fimPagina{
     background-color: black;

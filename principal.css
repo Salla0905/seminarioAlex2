@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+
+}
+header{
+    background-color: rgb(93, 93, 93)
+}
+card{
+    display: inline-flex;
+    background-color: rgb(D9, D9, D9);
+}

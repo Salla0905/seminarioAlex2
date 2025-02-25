@@ -11,6 +11,12 @@ titulo{
     font-size: 3rem;
     margin-bottom: 50px
 }
+h2{
+    margin-left: 50px;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
 header{
     display: inline-flex;
     background-color: rgb(93, 93, 93);
@@ -18,6 +24,7 @@ header{
     height: 75px;
     justify-content: space-between;
     align-items: center;
+    border-radius: 10px;
     botoes{
         display: inline-flex;
         justify-content: space-between;
@@ -35,7 +42,7 @@ header{
 }
 .roupaExposicao{
     margin-left: 200px;
-    width: 500px;
+    height: 500px;
 }
 rec{
     display: inline-flex;
@@ -51,4 +58,85 @@ rec{
 item{
     display: inline-flex;
     margin-top: 50px;
+}
+botao1{
+    background-color: black;
+    text-align: center;
+    color: white;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    width: 150px;
+    height: 40px;
+}
+botao2{
+    background-color:#8c8c8c;
+    text-align: center;
+    color: white;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    width: 150px;
+    height: 40px;
+    margin-left: 20px;
+}
+botoes{
+    margin-left: 50px;
+}
+p{
+    margin-left: 50px;
+    width: 400px;
+}
+preco{
+    margin-left: 50px;
+    color: #8c8c8c;
+    font-size: 1.5rem;
+}
+card{
+    margin-left: 50px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #d9d9d9;
+    height: 400px;
+    width: 250px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    titulo{
+        margin-left: 0px;
+        font-size: 1.5rem;
+        margin-bottom: 0px
+    }
+    .estrela{
+        margin: 10px
+    }
+    desc{
+        margin-bottom: 20px;
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        color: #a6a6a6;
+    }
+    botao{
+        background-color: black;
+        color: white;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        width: 100px;
+        height: 40px;
+    }
+    .roupa{
+        height: 50%;
+    }
+}
+info{
+    display: inline-flex;
+    flex-direction: column;
+}
+botoes{
+    margin-top: 10px;
 }

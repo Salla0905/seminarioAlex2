@@ -6,9 +6,9 @@
 .Belle{
     width: 250px;
 }
-h2{
-    margin-left: 75px;
-    font-size: 2rem;
+titulo{
+    margin-left: 50px;
+    font-size: 3rem;
     margin-bottom: 50px
 }
 header{
@@ -32,4 +32,23 @@ header{
     .lupa{
         width: 30px;
     }
+}
+.roupaExposicao{
+    margin-left: 200px;
+    width: 500px;
+}
+rec{
+    display: inline-flex;
+    flex-direction: column;
+    div{
+        background-color: gray;
+        width: 100px;
+        height: 100px;
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
+}
+item{
+    display: inline-flex;
+    margin-top: 50px;
 }

@@ -48,7 +48,7 @@ rec{
     display: inline-flex;
     flex-direction: column;
     div{
-        background-color: gray;
+        background-color: #d9d9d9;
         width: 100px;
         height: 100px;
         margin-bottom: 20px;

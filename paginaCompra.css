@@ -29,11 +29,14 @@ header{
         display: inline-flex;
         justify-content: space-between;
         .filter{
-            height: 75px;
+            height: 60px;
         }
         .bag{
-            padding: 5px;
-            height: 60px
+            height: 50px
+        }
+        .user{
+            margin-top: 5px;
+            height: 50px;
         }
     }
     .lupa{

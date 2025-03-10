@@ -72,6 +72,12 @@ botao1{
     border-radius: 10px;
     width: 150px;
     height: 40px;
+    transition: 1s;
+}
+botao1:hover{
+    width: 175px;
+    height: 50px;
+    transition: 1s;
 }
 botao2{
     background-color:#8c8c8c;
@@ -84,6 +90,11 @@ botao2{
     width: 150px;
     height: 40px;
     margin-left: 20px;
+}
+botao2:hover{
+    width: 175px;
+    height: 50px;
+    transition: 1s;
 }
 botoes{
     margin-left: 50px;
@@ -106,6 +117,7 @@ card{
     height: 400px;
     width: 250px;
     border-radius: 10px;
+    transition: 1s;
     margin-bottom: 50px;
     titulo{
         margin-left: 0px;
@@ -131,10 +143,20 @@ card{
         border-radius: 10px;
         width: 100px;
         height: 40px;
+        transition: 1s;
+    }
+    botao:hover{
+        width: 125px;
+        height: 50px;
+        transition: 1s;
     }
     .roupa{
         height: 50%;
     }
+}
+card:hover{
+    background-color: #bebebe;
+    transition: 1s;
 }
 info{
     display: inline-flex;

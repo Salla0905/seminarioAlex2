@@ -52,8 +52,10 @@ div{
 select{
     margin-right: 20px;
     margin-top: 20px;
-    width: 75px;
-    height: 30px;
+    width: 100px;
+    height: 40px;
+    padding: 10px;
+    font-size: 1rem;
 }
 item{
     display: inline-flex;

@@ -9,7 +9,6 @@
 titulo{
     margin-left: 50px;
     font-size: 3rem;
-    margin-bottom: 50px
 }
 h2{
     margin-left: 50px;
@@ -47,16 +46,18 @@ header{
     margin-left: 200px;
     height: 500px;
 }
-rec{
-    display: inline-flex;
-    flex-direction: column;
-    div{
-        background-color: #d9d9d9;
-        width: 100px;
-        height: 100px;
-        margin-bottom: 20px;
-        margin-left: 20px;
-    }
+div{
+    margin-left: 50px;
+}
+#size{
+
+}
+#qtd{}
+select{
+    margin-right: 20px;
+    margin-top: 20px;
+    width: 75px;
+    height: 30px;
 }
 item{
     display: inline-flex;

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="login.css">
-    <title>Login</title>
+    <title>Sign in</title>
 </head>
 <body>
     <header>
@@ -26,23 +26,27 @@
         <titulo>Login</titulo>
         <form action="">
             <label for="">
-                <input type="email" name="email" id="email" minlength="5" maxlength="50" placeholder="digite seu e-mail" required>
+                <input type="text" minlength="5" maxlength="50" placeholder="digite seu nome" required>
             </label>
             <label for="">
-                <input type="password" name="senha" id="senha" minlength="8" maxlength="16" placeholder="digite sua senha" required>
+                <input type="email" minlength="5" maxlength="50" placeholder="digite seu email" required>
+            </label>
+            <label for="">
+                <input type="tel" placeholder="digite seu telefone" required>
+            </label>
+            <label for="">
+                <input type="password" name="pass1" id="pass1" placeholder="digite sua senha" minlength="8" maxlength="16" required>
+            </label>
+            <label for="">
+                <input type="password" name="pass2" id="pass2" placeholder="Confirme sua senha" minlength="8" maxlength="16" required>
+                <!--Aqui vai precisar de uma verificação para ver se uma senha é igual a outra, de modo que caso não seja, o usuario deve 
+                digitar novamente-->
             </label>
             <fieldset>
                 <input type="checkbox" name="lembrese" id="lembrese">
                 Lembre-se de mim
             </fieldset>
-            Esqueci a senha
-            <div>
-                <input type="submit" value="Enviar">
-            </div>
         </form>
-        <p>ou</p>
-        <div>Continuar com google</div>
-        Não tem uma conta? <a href="signin.html">Sign in</a>
     </login>
 </body>
 </html>

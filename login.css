@@ -68,21 +68,25 @@ google{
     width: 250px;
     height: 30px;   
     padding-left: 10px;
+    margin-bottom: 10px;
 }
 #email{
     width: 250px;
     height: 30px;
     padding-left: 10px;
+    margin-bottom: 10px;
 }
 #tel{
     width: 250px;
     height: 30px;
     padding-left: 10px;
+    margin-bottom: 10px;
 }
 #senha{
     width: 250px;
     height: 30px;
     padding-left: 10px;
+    margin-bottom: 10px;
 }
 botaoEnvio{
     margin: 30px;

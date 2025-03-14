@@ -26,19 +26,19 @@
         <titulo>Login</titulo>
         <form action="">
             <label for="">
-                <input type="text" minlength="5" maxlength="50" placeholder="digite seu nome" required>
+                <input type="text" name="nome" id="nome" minlength="5" maxlength="50" placeholder="digite seu nome" required>
             </label>
             <label for="">
-                <input type="email" minlength="5" maxlength="50" placeholder="digite seu email" required>
+                <input type="email" name="email" id="email" minlength="5" maxlength="50" placeholder="digite seu email" required>
             </label>
             <label for="">
-                <input type="tel" placeholder="digite seu telefone" required>
+                <input type="tel" name="tel" id="tel" placeholder="digite seu telefone" required>
             </label>
             <label for="">
-                <input type="password" name="pass1" id="pass1" placeholder="digite sua senha" minlength="8" maxlength="16" required>
+                <input type="password" name="pass1" id="senha" placeholder="digite sua senha" minlength="8" maxlength="16" required>
             </label>
             <label for="">
-                <input type="password" name="pass2" id="pass2" placeholder="Confirme sua senha" minlength="8" maxlength="16" required>
+                <input type="password" name="pass2" id="senha" placeholder="Confirme sua senha" minlength="8" maxlength="16" required>
                 <!--Aqui vai precisar de uma verificação para ver se uma senha é igual a outra, de modo que caso não seja, o usuario deve 
                 digitar novamente-->
             </label>
@@ -46,9 +46,10 @@
                 <input type="checkbox" name="lembrese" id="lembrese">
                 Lembre-se de mim
             </fieldset>
-            <div>
-                <input type="submit" value="">
-            </div>
+            <botaoEnvio>
+                <img src="Componentes do site/botão.png" alt="">
+                <input type="submit" value="Enviar">
+            </botaoEnvio>
         </form>
         <p>Já tem uma conta? <a href="login.html">Sign up</a></p>
     </login>

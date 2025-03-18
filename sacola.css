@@ -38,9 +38,8 @@ header{
 items{
     margin-top: 100px;
     margin-bottom: 50px;
-    width: 100%;
     display: inline-block;
-
+    margin-left: 225px;
 }
 preco{
     color: #888888;
@@ -54,6 +53,7 @@ card{
     align-items: center;
     justify-content: space-around;
     transition: 1s;
+    margin: 10px;
     div{
         display: inline-flex;
         flex-direction: column;
@@ -78,6 +78,7 @@ fimPagina{
     align-items: end;
     width: 100%;
     height: 300px;
+    margin-top: 50px;
     fim{
         display: inline-flex;
         color: white;

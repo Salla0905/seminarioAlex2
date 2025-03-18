@@ -32,7 +32,8 @@ header{
             height: 60px;
         }
         .bag{
-            height: 50px
+            margin-top: 10px;
+            height: 35px
         }
         .user{
             margin-top: 5px;

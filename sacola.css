@@ -39,6 +39,7 @@ items{
     margin-bottom: 50px;
     width: 100%;
     display: inline-block;
+
 }
 preco{
     color: #888888;
@@ -51,16 +52,22 @@ card{
     padding: 10px;
     align-items: center;
     justify-content: space-around;
+    transition: 1s;
     div{
         display: inline-flex;
         flex-direction: column;
     }
     .roupa{
         width: 100px;
+        border-radius: 20px;
     }
     titulo{
         width: 10%;
     }
+}
+card:hover{
+    background-color: #bebebe;
+    transition: 1s;
 }
 fimPagina{
     display: inline-flex;
@@ -76,4 +83,8 @@ fimPagina{
         justify-content: space-between;
         width: 100%;
     }
+}
+total{
+    margin-left: 50px;
+    font-size: 1.5rem;
 }

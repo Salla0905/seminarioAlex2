@@ -39,7 +39,32 @@ items{
     margin-top: 100px;
     margin-bottom: 50px;
     display: inline-block;
-    margin-left: 225px;
+    margin-left: 310px;
+    transition: 1s;
+}
+@media(max-width:1000px){
+    items{
+        margin-left: 250px;
+        transition: 1s;
+    }
+}
+@media(max-width:900px){
+    items{
+        margin-left: 150px;
+        transition:1s;
+    }
+}
+@media(max-width:800px){
+    items{
+        margin-left:90px;
+        transition:1s;
+    }
+}
+@media(max-width:700px){
+    items{
+        margin-left: 0px;
+        transition: 1s;
+    }
 }
 preco{
     color: #888888;

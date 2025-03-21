@@ -22,6 +22,7 @@
         </botoes>
     </header>
     <br><br><br><br><br><br><br>
+    <!--O login tá ai caso o usuario já tenha conta-->
     <login>
         <titulo>Login</titulo>
         <form action="">
@@ -32,8 +33,10 @@
                 <input type="password" name="senha" id="senha" minlength="8" maxlength="16" placeholder="digite sua senha" required>
             </label>
             <fieldset>
-                <input type="checkbox" name="lembrese" id="lembrese">
-                Lembre-se de mim
+                <div>
+                    <input type="checkbox" name="lembrese" id="lembrese">
+                    Lembre-se de mim
+                </div>
                 Esqueci a senha
             </fieldset>
             <botaoEnvio>

@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: inline-flex;
+    position: fixed;
+    background-color: rgb(93, 93, 93);
+    width: 100%;
+    height: 75px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    botoes{
+        display: inline-flex;
+        justify-content: space-between;
+        margin-right: 20px;
+        .filter{
+            height: 60px;
+        }
+        .bag{
+            margin-top: 10px;
+            height: 35px
+        }
+        .user{
+            margin-top: 5px;
+            height: 50px;
+        }
+    }
+    .lupa{
+        width: 30px;
+    }
+}
+.Belle{
+    width: 200px;
+}
+item{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/*yyyttuyuyuyuyuyuyuyuyuyuyuyuyuyuyuyuyuyuuyuyuyuyuyuyuyuyuyuyuyuyuyuyuyuyuyuuy8y7yuyyuyuyuyuyuyuyuyuyuyuyuyuyuyuyuyuyuyuuyuyuyuyuyuyuyuyuyuuuuyuyuyuyuyuyuyuuyuyuyuyuyuyhuyuyuyuyuyuyyuyyyuyuyuyuyuyuyuyyuyuyuuyuyuuyyuuyuyuyuyyuyuyuyuyuyuyuyuyuyuyuyuyuyuyuyuyuyuyuyuyuyuyuyuyuyuyuyuyuyuyuyuyuuyuyuyuyuyuyuyuuyuyuyuyyuuyuyuyuyuyuyuyuyuyuyuyuyuyuyuyuyuyuyuyuyuyuyu*/

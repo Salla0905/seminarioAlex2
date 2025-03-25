@@ -39,5 +39,27 @@ item{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    margin-top: 250px;
 }
-/*yyyttuyuyuyuyuyuyuyuyuyuyuyuyuyuyuyuyuyuuyuyuyuyuyuyuyuyuyuyuyuyuyuyuyuyuyuuy8y7yuyyuyuyuyuyuyuyuyuyuyuyuyuyuyuyuyuyuyuuyuyuyuyuyuyuyuyuyuuuuyuyuyuyuyuyuyuuyuyuyuyuyuyhuyuyuyuyuyuyyuyyyuyuyuyuyuyuyuyyuyuyuuyuyuuyyuuyuyuyuyyuyuyuyuyuyuyuyuyuyuyuyuyuyuyuyuyuyuyuyuyuyuyuyuyuyuyuyuyuyuyuyuyuuyuyuyuyuyuyuyuuyuyuyuyyuuyuyuyuyuyuyuyuyuyuyuyuyuyuyuyuyuyuyuyuyuyuyu*/
+.cart{
+    display: inline-flex;
+    width: 200px;
+    margin-bottom: 44px;
+}
+texto{
+    font-size: 2rem;
+    margin-bottom: 44px;
+
+}
+botao{
+    display: inline-flex;
+    width: 200px;
+    height: 60px;
+    background-color: black;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    border-radius: 6px;
+}

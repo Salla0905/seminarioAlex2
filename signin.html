@@ -22,8 +22,9 @@
         </botoes>
     </header>
     <br><br><br><br><br><br><br>
+    <!--O sign in tá aí caso o usuario não tenha conta-->
     <login>
-        <titulo>Login</titulo>
+        <titulo>Cadastro</titulo>
         <form action="">
             <label for="">
                 <input type="text" name="nome" id="nome" minlength="5" maxlength="50" placeholder="digite seu nome" required>
@@ -42,10 +43,6 @@
                 <!--Aqui vai precisar de uma verificação para ver se uma senha é igual a outra, de modo que caso não seja, o usuario deve 
                 digitar novamente-->
             </label>
-            <fieldset>
-                <input type="checkbox" name="lembrese" id="lembrese">
-                Lembre-se de mim
-            </fieldset>
             <botaoEnvio>
                 <img src="Componentes do site/botão.png" alt="">
                 <input type="submit" value="Enviar">

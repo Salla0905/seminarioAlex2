@@ -9,7 +9,6 @@
 titulo{
     margin-left: 50px;
     font-size: 3rem;
-    margin-bottom: 50px
 }
 h2{
     margin-left: 50px;
@@ -25,6 +24,7 @@ header{
     justify-content: space-between;
     align-items: center;
     border-radius: 10px;
+    position: fixed;
     botoes{
         display: inline-flex;
         justify-content: space-between;
@@ -47,20 +47,20 @@ header{
     margin-left: 200px;
     height: 500px;
 }
-rec{
-    display: inline-flex;
-    flex-direction: column;
-    div{
-        background-color: #d9d9d9;
-        width: 100px;
-        height: 100px;
-        margin-bottom: 20px;
-        margin-left: 20px;
-    }
+div{
+    margin-left: 50px;
+}
+select{
+    margin-right: 20px;
+    margin-top: 20px;
+    width: 100px;
+    height: 40px;
+    padding: 10px;
+    font-size: 1rem;
 }
 item{
     display: inline-flex;
-    margin-top: 50px;
+    margin-top: 100px;
 }
 botao1{
     background-color: black;

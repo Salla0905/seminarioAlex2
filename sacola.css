@@ -121,3 +121,7 @@ total{
     margin-left: 50px;
     font-size: 1.5rem;
 }
+select{
+    width: 100px;
+    height: 25px;
+}

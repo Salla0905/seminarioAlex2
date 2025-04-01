@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../../../../../DAD/Belle%20Époque/seminarioAlex2/principal.css">
+    <link rel="stylesheet" href="CSS/principal.css">
     <title>Home</title>
     
     <!-- Bootstrap CSS -->
@@ -16,7 +16,7 @@
     <header>
         <form action="">
         </form>
-        <img src="../../../../../../DAD/Belle%20Époque/seminarioAlex2/Componentes%20do%20site/Belle%20Époque.png" alt="" class="Belle">
+        <img src="../../resources/static/Belle%20Époque.png" alt="" class="Belle">
         <!-- <div class="botoes">
            <img src="Componentes do site/Vector.png" alt="" class="bag">
             <img src="Componentes do site/User.png" alt="300" class="user">
@@ -202,9 +202,9 @@
     </categorias>
     <fimPagina>
         <redes>
-            <img src="../../../../../../DAD/Belle%20Époque/seminarioAlex2/Componentes%20do%20site/Facebook.png" alt="">
-            <img src="../../../../../../DAD/Belle%20Époque/seminarioAlex2/Componentes%20do%20site/Twitter%20Bird.png" alt="">
-            <img src="../../../../../../DAD/Belle%20Époque/seminarioAlex2/Componentes%20do%20site/Instagram.png" alt="">
+            <img src="../../resources/static/Facebook.png" alt="">
+            <img src="../../resources/static/Twitter%20Bird.png" alt="">
+            <img src="../../resources/static/Instagram.png" alt="">
         </redes>
         <fim>
             <txt>© 2025 Copyright</txt>

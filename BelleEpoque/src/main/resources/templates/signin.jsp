@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../../../../../DAD/Belle%20Époque/seminarioAlex2/login.css">
+    <link rel="stylesheet" href="CSS/login.css">
     <title>Sign in</title>
 </head>
 <body>
     <header>
         <form action="">
         </form>
-        <img src="../../../../../../DAD/Belle%20Époque/seminarioAlex2/Componentes%20do%20site/Belle%20Époque.png" alt="" class="Belle">
+        <img src="../../resources/static/Belle%20Époque.png" alt="" class="Belle">
         <!-- <div class="botoes">
            <img src="Componentes do site/Vector.png" alt="" class="bag">
             <img src="Componentes do site/User.png" alt="300" class="user">
@@ -26,20 +26,20 @@
     <login>
         <titulo>Cadastro</titulo>
         <form action="">
-            <label for="">
+            <label for="nome">
                 <input type="text" name="nome" id="nome" minlength="5" maxlength="50" placeholder="digite seu nome" required>
             </label>
-            <label for="">
+            <label for="email">
                 <input type="email" name="email" id="email" minlength="5" maxlength="50" placeholder="digite seu email" required>
             </label>
-            <label for="">
+            <label for="tel">
                 <input type="tel" name="tel" id="tel" placeholder="digite seu telefone" required>
             </label>
-            <label for="">
+            <label for="senha">
                 <input type="password" name="pass1" id="senha" placeholder="digite sua senha" minlength="8" maxlength="16" required>
             </label>
-            <label for="">
-                <input type="password" name="pass2" id="senha" placeholder="Confirme sua senha" minlength="8" maxlength="16" required>
+            <label for="senha2">
+                <input type="password" name="pass2" id="senha2" placeholder="Confirme sua senha" minlength="8" maxlength="16" required>
                 <!--Aqui vai precisar de uma verificação para ver se uma senha é igual a outra, de modo que caso não seja, o usuario deve 
                 digitar novamente-->
             </label>
@@ -48,7 +48,7 @@
                 <input type="submit" value="Enviar">
             </botaoEnvio>
         </form>
-        <p>Já tem uma conta? <a href="login.html">Sign up</a></p>
+        <p>Já tem uma conta? <a href="login.jsp">Sign up</a></p>
     </login>
 </body>
 </html>

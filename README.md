@@ -11,7 +11,7 @@ Integrantes: Bruna Salla, Júlia Porfirio, Mariana Lopes
 Empresa: Belle Époque
 
 Sobre nós
-Nosso projeto é uma loja de produtos, femininos do ramo da moda (roupas, sapatos, bolsas e acessórios)
+Nosso projeto é uma loja de produtos femininos do ramo da moda (roupas, sapatos, bolsas e acessórios)
 
 
 

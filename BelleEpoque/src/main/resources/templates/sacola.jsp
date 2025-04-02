@@ -1,3 +1,5 @@
+<%@ page import="org.example.belleepoque.Controller.CarrinhoController" %>
+<%@ page import="org.example.belleepoque.repository.CarrinhoRepository" %>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -22,8 +24,13 @@
         </div>
     </header>
     <items>
+        <%
+            CarrinhoRepository carrinhoRepository = null;
+            CarrinhoController carrinhoController = new CarrinhoController(carrinhoRepository);%>
         <!--A cada roupa adicionada na sacola, um desses cards surge com suas respectivas informações.-->
         <!--Provavelmente vamo precisar de um while para ir pegando as informações dos produtos que estão na sacola-->
+        <%while(carrinhoController.listar().iterator().hasNext()){%>
+        <!--vai precisar de um if para verificar se o id_usuario do carrinho é o mesmo do usuario que tá logado-->
         <card>
             <img src="../../../../../../DAD/Belle%20Époque/seminarioAlex2/Imagens%20de%20roupas/roupa.webp" alt="" class="roupa">
             <div>
@@ -51,6 +58,7 @@
                 </label>
             </botao>
         </card>
+        <%}%>
     </items>
     <!--Aqui vai somar o valor de cada item para gerar um valor total-->
     <total>TOTAL:R$99.99</total>

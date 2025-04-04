@@ -3,9 +3,8 @@ package org.example.belleepoque.Controller;
 import org.example.belleepoque.model.Usuario;
 import org.example.belleepoque.repository.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -20,5 +19,10 @@ public class UsuarioController {
     @GetMapping("/listar")
     public List<Usuario> listar() {
         return usuarioRepository.findAll();
+    }
+    @PostMapping("/inserir")
+    public ResponseEntity<Usuario> inserir(@RequestBody Usuario usuario) {
+        usuarioRepository.save(usuario);
+        return ResponseEntity.ok(usuario);
     }
 }

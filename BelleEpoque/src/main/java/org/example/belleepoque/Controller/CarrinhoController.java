@@ -3,9 +3,8 @@ package org.example.belleepoque.Controller;
 import org.example.belleepoque.model.Carrinho;
 import org.example.belleepoque.repository.CarrinhoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -20,5 +19,10 @@ public class CarrinhoController {
     @GetMapping("/listar")
     public List<Carrinho> listar() {
         return carrinhoRepository.findAll();
+    }
+    @PostMapping("/inserir")
+    public ResponseEntity<Carrinho> inserir(@RequestBody Carrinho carrinho) {
+        carrinhoRepository.save(carrinho);
+        return ResponseEntity.ok(carrinho);
     }
 }

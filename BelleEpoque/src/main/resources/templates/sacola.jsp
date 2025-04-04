@@ -1,4 +1,4 @@
-<%@ page import="org.example.belleepoque.Controller.CarrinhoController" %>
+<%@ page import="org.example.belleepoque.controller.CarrinhoController" %>
 <%@ page import="org.example.belleepoque.repository.CarrinhoRepository" %>
 <!DOCTYPE html>
 <html lang="pt-br">

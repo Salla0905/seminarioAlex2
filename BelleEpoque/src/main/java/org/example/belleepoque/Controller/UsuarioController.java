@@ -1,4 +1,4 @@
-package org.example.belleepoque.Controller;
+package org.example.belleepoque.controller;
 
 import org.example.belleepoque.model.Usuario;
 import org.example.belleepoque.repository.UsuarioRepository;

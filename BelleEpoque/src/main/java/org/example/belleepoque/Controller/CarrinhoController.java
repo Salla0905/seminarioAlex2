@@ -7,6 +7,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 @RequestMapping("/carrinho")
@@ -24,5 +25,13 @@ public class CarrinhoController {
     public ResponseEntity<Carrinho> inserir(@RequestBody Carrinho carrinho) {
         carrinhoRepository.save(carrinho);
         return ResponseEntity.ok(carrinho);
+    }
+    @GetMapping("/buscarId")
+    public ResponseEntity<Carrinho> buscarId(@RequestParam int id) {
+        Optional<Carrinho> carrinho = carrinhoRepository.findById((long)id);
+        if (carrinho.isPresent()) {
+            return ResponseEntity.ok(carrinho.get());
+        }
+        return ResponseEntity.notFound().build();
     }
 }

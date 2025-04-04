@@ -7,6 +7,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 @RequestMapping("/usuario")
@@ -24,5 +25,13 @@ public class UsuarioController {
     public ResponseEntity<Usuario> inserir(@RequestBody Usuario usuario) {
         usuarioRepository.save(usuario);
         return ResponseEntity.ok(usuario);
+    }
+    @GetMapping("/buscarId")
+    public ResponseEntity<Usuario> buscarPorId(@RequestParam("id") Integer id) {
+        Optional<Usuario> usuario = usuarioRepository.findById(Long.valueOf(id));
+        if (usuario.isPresent()) {
+            return ResponseEntity.ok(usuario.get());
+        }
+        return ResponseEntity.notFound().build();
     }
 }

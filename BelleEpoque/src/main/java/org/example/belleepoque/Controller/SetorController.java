@@ -7,6 +7,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 @RequestMapping("/setor")
@@ -24,5 +25,13 @@ public class SetorController {
     public ResponseEntity<Setor> inserir(@RequestBody Setor setor) {
         setorRepository.save(setor);
         return ResponseEntity.ok(setor);
+    }
+    @GetMapping("/buscarId")
+    public ResponseEntity<Setor> buscarPorId(@RequestParam Long id) {
+        Optional<Setor> setor = setorRepository.findById(id);
+        if (setor.isPresent()) {
+            return ResponseEntity.ok(setor.get());
+        }
+        return ResponseEntity.notFound().build();
     }
 }

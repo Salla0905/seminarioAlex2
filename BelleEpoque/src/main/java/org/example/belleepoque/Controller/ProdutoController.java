@@ -7,6 +7,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 @RequestMapping("/produtos")
@@ -24,5 +25,13 @@ public class ProdutoController {
     public ResponseEntity<Produto> inserir(@RequestBody Produto produto) {
         produtoRepository.save(produto);
         return ResponseEntity.ok(produto);
+    }
+    @GetMapping("/buscarId")
+    public ResponseEntity<Produto> buscarPorId(@RequestParam Long id) {
+        Optional<Produto> produto = produtoRepository.findById(id);
+        if (produto.isPresent()) {
+            return ResponseEntity.ok(produto.get());
+        }
+        return ResponseEntity.notFound().build();
     }
 }

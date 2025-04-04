@@ -7,6 +7,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 @RequestMapping("/compra")
@@ -24,5 +25,13 @@ public class CompraController {
     public ResponseEntity<Compra> inserir(@RequestBody Compra compra) {
         compraRepository.save(compra);
         return ResponseEntity.ok(compra);
+    }
+    @GetMapping("/buscarId")
+    public ResponseEntity<Compra> buscarPorId(@RequestParam int id) {
+        Optional<Compra> compra = compraRepository.findById((long) id);
+        if (compra.isPresent()) {
+            return ResponseEntity.ok(compra.get());
+        }
+        return ResponseEntity.notFound().build();
     }
 }

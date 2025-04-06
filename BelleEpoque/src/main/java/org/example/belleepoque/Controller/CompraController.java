@@ -34,4 +34,9 @@ public class CompraController {
         }
         return ResponseEntity.notFound().build();
     }
+    @DeleteMapping("/deletar/{id}")
+    public ResponseEntity<Compra> deletar(@PathVariable int id) {
+        compraRepository.deleteById((long) id);
+        return ResponseEntity.ok().build();
+    }
 }

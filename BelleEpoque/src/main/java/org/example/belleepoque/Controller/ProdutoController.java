@@ -34,4 +34,9 @@ public class ProdutoController {
         }
         return ResponseEntity.notFound().build();
     }
+    @DeleteMapping("/deletar/{id}")
+    public ResponseEntity<Produto> deletar(@PathVariable Long id) {
+        produtoRepository.deleteById(id);
+        return ResponseEntity.ok().build();
+    }
 }

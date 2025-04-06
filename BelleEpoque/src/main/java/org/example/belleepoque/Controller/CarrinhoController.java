@@ -34,4 +34,9 @@ public class CarrinhoController {
         }
         return ResponseEntity.notFound().build();
     }
+    @DeleteMapping("/delete/{id}")
+    public ResponseEntity<Carrinho> delete(@PathVariable int id) {
+        carrinhoRepository.deleteById((long)id);
+        return ResponseEntity.ok().build();
+    }
 }

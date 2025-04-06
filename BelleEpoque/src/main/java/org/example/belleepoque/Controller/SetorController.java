@@ -34,4 +34,9 @@ public class SetorController {
         }
         return ResponseEntity.notFound().build();
     }
+    @DeleteMapping("/deletar/{id}")
+    public ResponseEntity<Setor> deletar(@PathVariable Long id) {
+        setorRepository.deleteById(id);
+        return ResponseEntity.ok(setorRepository.findById(id).get());
+    }
 }

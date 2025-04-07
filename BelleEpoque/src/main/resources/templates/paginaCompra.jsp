@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../../../../../DAD/Belle%20Époque/seminarioAlex2/paginaCompra.css">
+    <link rel="stylesheet" href="CSS/paginaCompra.css">
     <title>Pagina de compra</title>
 </head>
 <body>
     <header>
         <form action="">
         </form>
-        <img src="../../../../../../DAD/Belle%20Époque/seminarioAlex2/Componentes%20do%20site/Belle%20Époque.png" alt="" class="Belle">
+        <img src="../../resources/static/Belle%20Époque.png" alt="" class="Belle">
         <!-- <div class="botoes">
-           <img src="Componentes do site/Vector.png" alt="" class="bag">
-            <img src="Componentes do site/User.png" alt="300" class="user">
+           <img src="static/Vector.png" alt="" class="bag">
+            <img src="static/User.png" alt="300" class="user">
         </div>   -->
         <div id="sidenav">
             <a href="#" id="home">Home</a>
@@ -27,7 +27,7 @@
             <!--Aqui vai pegar o nome do produto do banco de dados e colocar no titulo-->
             <titulo>ROUPA EXEMPLO</titulo>
             <div>
-                <label for="">
+                <label for="size">
                     <select name="size" id="size">
                         <!--Botao de tamanho
                         Aqui vai precisar verificar os tamanhos disponiveis, tipo se esse tamanho tiver disponivel, você adiciona uma option-->
@@ -38,7 +38,7 @@
                         <option value="v4">18</option>
                     </select>
                 </label>
-                <label for="">
+                <label for="qtd">
                     <!--Botao de quantidade
                     nessa parte da quantidade vai precisar de uma verificação de quanto tem em estoque, tipo um while para enquanto não for maior que o estoque, você coloca uma option-->
                     <select name="qtd" id="qtd">
@@ -70,10 +70,7 @@
                 <titulo>
                     ROUPA EXEMPLO
                 </titulo>
-<<<<<<< HEAD
                 <img src="../../../../../../DAD/Belle%20Époque/seminarioAlex2/Componentes%20do%20site/Group%201.png" alt="" class="estrela">
-=======
->>>>>>> fa21557a391591cc22a452a2d24afa86c8594caf
                 <desc>
                     <preco>0.0</preco>
                     <prom>até 10x sem juros</prom>
@@ -86,9 +83,9 @@
     </item>
     <fimPagina>
         <redes>
-            <img src="../../../../../../DAD/Belle%20Époque/seminarioAlex2/Componentes%20do%20site/Facebook.png" alt="">
-            <img src="../../../../../../DAD/Belle%20Époque/seminarioAlex2/Componentes%20do%20site/Twitter%20Bird.png" alt="">
-            <img src="../../../../../../DAD/Belle%20Époque/seminarioAlex2/Componentes%20do%20site/Instagram.png" alt="">
+            <img src="../../resources/static/Facebook.png" alt="">
+            <img src="../../resources/static/Twitter%20Bird.png" alt="">
+            <img src="../../resources/static/Instagram.png" alt="">
         </redes>
         <fim>
             <txt>© 2025 Copyright</txt>

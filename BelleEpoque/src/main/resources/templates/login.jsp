@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../../../../../DAD/Belle%20Époque/seminarioAlex2/login.css">
+    <link rel="stylesheet" href="CSS/login.css">
     <title>Login</title>
 </head>
 <body>
         <header>
             <form action="">
             </form>
-            <img src="../../../../../../DAD/Belle%20Époque/seminarioAlex2/Componentes%20do%20site/Belle%20Époque.png" alt="" class="Belle">
+            <img src="../../resources/static/Belle%20Époque.png" alt="" class="Belle">
             <!-- <div class="botoes">
                <img src="Componentes do site/Vector.png" alt="" class="bag">
                 <img src="Componentes do site/User.png" alt="300" class="user">
@@ -26,10 +26,10 @@
     <login>
         <titulo>Login</titulo>
         <form action="">
-            <label for="">
+            <label for="email">
                 <input type="email" name="email" id="email" minlength="5" maxlength="50" placeholder="digite seu e-mail" required>
             </label>
-            <label for="">
+            <label for="senha">
                 <input type="password" name="senha" id="senha" minlength="8" maxlength="16" placeholder="digite sua senha" required>
             </label>
             <fieldset>
@@ -40,7 +40,7 @@
                 <input type="submit" value="Enviar">
             </botaoEnvio>
         </form>
-        <p>Não tem uma conta? <a href="signin.html">Sign in</a></p>
+        <p>Não tem uma conta? <a href="signin.jsp">Sign in</a></p>
     </login>
 </body>
 </html>

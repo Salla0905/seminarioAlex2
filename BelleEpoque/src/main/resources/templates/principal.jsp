@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../../../../../DAD/Belle%20Époque/seminarioAlex2/principal.css">
+    <link rel="stylesheet" href="CSS/principal.css">
     <title>Home</title>
     
     <!-- Bootstrap CSS -->
@@ -15,17 +15,17 @@
 <body>
     <header>
         <form action="">
-            <img src="Componentes do site/Search.png" alt="" class="lupa">
-            <label for="">
-                <input type="text" name="pesquisa" id="pesquisa" placeholder="Pesquisar...">
-            </label>
         </form>
-        <img src="Componentes do site/Belle Époque.png" alt="" class="Belle">
-        <botoes>
-            <img src="Componentes do site/Filter alt.png" alt="" class="filter">
-            <img src="Componentes do site/Vector.png" alt="" class="bag">
-            <img src="Componentes do site/User.png" alt="" class="user">
-        </botoes>
+        <img src="../../resources/static/Belle%20Époque.png" alt="" class="Belle">
+        <!-- <div class="botoes">
+           <img src="Componentes do site/Vector.png" alt="" class="bag">
+            <img src="Componentes do site/User.png" alt="300" class="user">
+        </div>   -->
+        <div id="sidenav">
+            <a href="#" id="home">Home</a>
+            <a href="#" id="sobre">Carrinho</a>
+            <a href="#" id="Contato">Perfil</a>
+        </div>
     </header>
 
     <!-- Carrossel -->
@@ -37,10 +37,10 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="Imagens de roupas/carrosel.jpg" class="d-block w-100" alt="Imagem 1">
+                    <img src="../../../../../../DAD/Belle%20Époque/seminarioAlex2/Imagens%20de%20roupas/depositphotos_106390820-stock-photo-fashion-collage-with-freehand-drawings.jpg" class="d-block w-100" alt="Imagem 1">
                 </div>
                 <div class="carousel-item">
-                    <img src="Imagens de roupas/carrosel2.jpg" class="d-block w-100" alt="Imagem 2">
+                    <img src="https://i.pinimg.com/736x/a0/e6/ed/a0e6edef0f92bd90d20a19cfa3f007f4.jpg" class="d-block w-100" alt="Imagem 2">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carrossel" data-bs-slide="prev">
@@ -196,19 +196,15 @@
             </bloco>
             <topico>
                 <textinho>Acessórios</textinho>
-                <img src="Imagens de roupas/acessórios.jpg" alt="" class="img4">
-            </topico>
-            <topico>
-                <textinho>Acessórios</textinho>
-                <img src="Imagens de roupas/acessórios2.jpg" alt="" class="img5">
+                <img src="../../../../../../DAD/Belle%20Époque/seminarioAlex2/Imagens%20de%20roupas/acessórios.jpg" alt="" class="img4">
             </topico>
         </bloco2>
     </categorias>
     <fimPagina>
         <redes>
-            <img src="../../../../../../DAD/Belle%20Époque/seminarioAlex2/Componentes%20do%20site/Facebook.png" alt="">
-            <img src="../../../../../../DAD/Belle%20Époque/seminarioAlex2/Componentes%20do%20site/Twitter%20Bird.png" alt="">
-            <img src="../../../../../../DAD/Belle%20Époque/seminarioAlex2/Componentes%20do%20site/Instagram.png" alt="">
+            <img src="../../resources/static/Facebook.png" alt="">
+            <img src="../../resources/static/Twitter%20Bird.png" alt="">
+            <img src="../../resources/static/Instagram.png" alt="">
         </redes>
         <fim>
             <txt>© 2025 Copyright</txt>

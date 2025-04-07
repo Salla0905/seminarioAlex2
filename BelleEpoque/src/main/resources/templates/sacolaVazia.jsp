@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../../../../../DAD/Belle%20Époque/seminarioAlex2/sacolaVazia.css">
+    <link rel="stylesheet" href="CSS/sacolaVazia.css">
     <title>sacola vazia</title>
 </head>
 <body>
@@ -11,7 +11,7 @@
     <header>
         <form action="">
         </form>
-        <img src="../../../../../../DAD/Belle%20Époque/seminarioAlex2/Componentes%20do%20site/Belle%20Époque.png" alt="" class="Belle">
+        <img src="../../resources/static/Belle%20Époque.png" alt="" class="Belle">
         <!-- <div class="botoes">
            <img src="Componentes do site/Vector.png" alt="" class="bag">
             <img src="Componentes do site/User.png" alt="300" class="user">
@@ -23,7 +23,7 @@
         </div>
     </header>
     <item>
-        <img src="../../../../../../DAD/Belle%20Époque/seminarioAlex2/Componentes%20do%20site/Vector.png" alt="" class="cart">
+        <img src="../../resources/static/Vector.png" alt="" class="cart">
         <texto>SEU CARRINHO ESTÁ VAZIO</texto>
         <botao>Ir ás compras!</botao>
     </item>

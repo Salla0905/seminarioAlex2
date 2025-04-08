@@ -1,13 +1,12 @@
-package org.example.belleepoque.controller;
+package org.example.belleepoque.Controller;
 
-import lombok.Getter;
 import org.example.belleepoque.model.Produto;
 import org.example.belleepoque.repository.ProdutoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.List;
+import java.util.Objects;
 import java.util.Optional;
 
 @RestController
@@ -39,9 +38,8 @@ public class ProdutoController {
     public ResponseEntity<Produto> buscarPorNome(@RequestParam String nome) {
         List <Produto> todos = listar();
         for(int i = 0; i<todos.size(); i++){
-            //precisa pegar o nome e verificar se ele é igual ao enviado como parametro
-            if(todos[i].nome == nome){
-                return todos[i];
+            if(Objects.equals(todos.get(i).getNome(), nome)){
+                return ResponseEntity.ok(todos.get(i));
             }
         }
         return null;

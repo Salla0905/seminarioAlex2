@@ -1,12 +1,14 @@
-package org.example.belleepoque.controller;
+package org.example.belleepoque.Controller;
 
 import org.example.belleepoque.model.Carrinho;
+import org.example.belleepoque.model.Produto;
 import org.example.belleepoque.repository.CarrinhoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Objects;
 import java.util.Optional;
 
 @RestController

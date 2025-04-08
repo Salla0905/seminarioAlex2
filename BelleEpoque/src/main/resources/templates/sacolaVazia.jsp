@@ -10,17 +10,17 @@
     <!--essa tela só vai mostrar caso não tenha nada na sacola-->
     <header>
         <form action="">
+            <img src="../../resources/static/Search.png" alt="" class="lupa">
+            <label for="pesquisa">
+                <input type="text" name="pesquisa" id="pesquisa" placeholder="Pesquisar...">
+            </label>
         </form>
         <img src="../../resources/static/Belle%20Époque.png" alt="" class="Belle">
-        <!-- <div class="botoes">
-           <img src="Componentes do site/Vector.png" alt="" class="bag">
-            <img src="Componentes do site/User.png" alt="300" class="user">
-        </div>   -->
-        <div id="sidenav">
-            <a href="#" id="home">Home</a>
-            <a href="#" id="sobre">Carrinho</a>
-            <a href="#" id="Contato">Perfil</a>
-        </div>
+        <botoes>
+            <img src="../../resources/static/Filter%20alt.png" alt="" class="filter">
+            <img src="../../resources/static/Vector.png" alt="" class="bag">
+            <img src="../../resources/static/User.png" alt="" class="user">
+        </botoes>
     </header>
     <item>
         <img src="../../resources/static/Vector.png" alt="" class="cart">

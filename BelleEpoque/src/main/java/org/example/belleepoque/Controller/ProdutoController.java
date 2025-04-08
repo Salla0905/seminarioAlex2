@@ -1,4 +1,4 @@
-package org.example.belleepoque.Controller;
+package org.example.belleepoque.controller;
 
 import lombok.Getter;
 import org.example.belleepoque.model.Produto;

@@ -212,5 +212,51 @@
             <txt>Privacy Police</txt>
         </fim>
     </fimPagina>
+
+    <script>
+        // Função para carregar dados do back-end
+        async function carregarDados() {
+            try {
+                // Busca dados da API (endpoints que criamos)
+                const [maisVendidos, lancamentos, ] = await Promise.all([
+                    fetch('/api/mais-vendidos').then(res => res.json()),
+                    fetch('/api/lancamentos').then(res => res.json()),
+                ]);
+
+                // Preenche os cards dinamicamente (mantendo suas classes CSS)
+                preencherSecao('mais-vendidos-container', maisVendidos);
+                preencherSecao('lancamentos-container', lancamentos);
+            } catch (error) {
+                console.error("Erro ao carregar dados:", error);
+            }
+        }
+
+        // Função para preencher produtos
+        function preencherSecao(containerId, produtos) {
+            const container = document.getElementById(containerId);
+            if (!container) return;
+
+            container.innerHTML = produtos.map(produto => `
+        <card>
+            <img src="${produto.imagemUrl}" alt="${produto.nome}" class="roupa">
+            <titulo>${produto.nome}</titulo>
+            <desc>
+                <preco>R$ ${produto.preco.toFixed(2)}</preco>
+            </desc>
+            <botao onclick="visualizarProduto(${produto.id})">
+                Visualizar
+            </botao>
+        </card>
+    `).join('');
+        }
+
+        // Função para visualizar produto
+        function visualizarProduto(id) {
+            window.location.href = `/produto?id=${id}`;
+        }
+
+        // Carrega os dados quando a página estiver pronta
+        document.addEventListener('DOMContentLoaded', carregarDados);
+    </script>
 </body>
 </html>

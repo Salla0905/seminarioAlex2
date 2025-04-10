@@ -93,5 +93,57 @@
             <txt>Privacy Police</txt>
         </fim>
     </fimPagina>
+    <script>
+        document.addEventListener('DOMContentLoaded', async () => {
+            const produtoId = new URLSearchParams(window.location.search).get('id');
+            if (!produtoId) return;
+
+            // Elementos DOM
+            const elements = {
+                imagem: document.querySelector('.roupaExposicao'),
+                nome: document.querySelector('info > titulo'),
+                preco: document.querySelector('precoo'),
+                descricao: document.querySelector('info > p'),
+                tamanhos: document.getElementById('size'),
+                quantidades: document.getElementById('qtd'),
+                recomendacao: document.querySelector('card')
+            };
+
+            try {
+                // Busca produto principal
+                const produto = await fetch(`/api/produtos/${produtoId}`).then(res => res.json());
+
+                // Preenche dados
+                elements.imagem.src = produto.imagemUrl;
+                elements.nome.textContent = produto.nome.toUpperCase();
+                elements.preco.textContent = `R$${produto.preco.toFixed(2)}`;
+                elements.descricao.textContent = produto.descricao;
+
+                // Preenche tamanhos
+                produto.tamanhosDisponiveis.forEach(t => {
+                    const option = document.createElement('option');
+                    option.value = t;
+                    option.textContent = t;
+                    elements.tamanhos.appendChild(option);
+                });
+
+                // Busca recomendações (excluindo o produto atual)
+                const recomendacoes = await fetch('/api/produtos/recomendacoes').then(res => res.json());
+                const recomendacao = recomendacoes.find(p => p.id != produtoId);
+                if (recomendacao) {
+                    elements.recomendacao.innerHTML = `
+                <img src="${recomendacao.imagemUrl}" alt="${recomendacao.nome}">
+                <titulo>${recomendacao.nome.toUpperCase()}</titulo>
+                <desc>
+                    <preco>R$${recomendacao.preco.toFixed(2)}</preco>
+                </desc>
+            `;
+                }
+
+            } catch (error) {
+                console.error("Erro ao carregar produto:", error);
+            }
+        });
+    </script>
 </body>
 </html>

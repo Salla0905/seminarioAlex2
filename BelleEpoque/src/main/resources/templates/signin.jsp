@@ -50,5 +50,35 @@
         </form>
         <p>Já tem uma conta? <a href="login.jsp">Sign up</a></p>
     </login>
+    <script>
+        document.getElementById('SignInForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+
+            const nome = document.getElementById('nome').value;
+            const email = document.getElementById('email').value;
+            const tel = document.getElementById('tel').value;
+            const senha = document.getElementById('senha').value;
+            const senha2 = document.getElementById('senha2').value;
+
+            try {
+                const response = await fetch('/login', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded',
+                    },
+                    body: `email=${encodeURIComponent(email)}&senha=${encodeURIComponent(senha)}`
+                });
+
+                if (response.redirected) {
+                    window.location.href = response.url;
+                } else {
+                    alert('Cadastro falhou.');
+                }
+            } catch (error) {
+                console.error('Erro:', error);
+                alert('Erro ao tentar fazer cadastrar');
+            }
+        });
+    </script>
 </body>
 </html>

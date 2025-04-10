@@ -42,5 +42,32 @@
         </form>
         <p>Não tem uma conta? <a href="signin.jsp">Sign in</a></p>
     </login>
+        <script>
+            document.getElementById('loginForm').addEventListener('submit', async function(e) {
+                e.preventDefault();
+
+                const email = document.getElementById('email').value;
+                const senha = document.getElementById('senha').value;
+
+                try {
+                    const response = await fetch('/login', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/x-www-form-urlencoded',
+                        },
+                        body: `email=${encodeURIComponent(email)}&senha=${encodeURIComponent(senha)}`
+                    });
+
+                    if (response.redirected) {
+                        window.location.href = response.url;
+                    } else {
+                        alert('Login falhou. Verifique suas credenciais.');
+                    }
+                } catch (error) {
+                    console.error('Erro:', error);
+                    alert('Erro ao tentar fazer login');
+                }
+            });
+        </script>
 </body>
 </html>

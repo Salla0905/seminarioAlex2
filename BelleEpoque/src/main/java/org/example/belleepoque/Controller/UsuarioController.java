@@ -1,7 +1,10 @@
 package org.example.belleepoque.controller;
 
+import org.apache.logging.log4j.message.Message;
+import org.example.belleepoque.dto.UsuarioDTO;
 import org.example.belleepoque.model.Usuario;
 import org.example.belleepoque.repository.UsuarioRepository;
+import org.example.belleepoque.service.UsuarioService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -39,4 +42,6 @@ public class UsuarioController {
         usuarioRepository.deleteById((long)id);
         return ResponseEntity.ok().build();
     }
+
+
 }

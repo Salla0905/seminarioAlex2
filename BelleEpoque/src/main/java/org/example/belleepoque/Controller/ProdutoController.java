@@ -40,7 +40,20 @@ public class ProdutoController {
         Optional<Produto> produto = produtoRepository.findById(id);
         return produto.map(ResponseEntity::ok).orElseGet(() -> ResponseEntity.notFound().build());
     }
+<<<<<<< HEAD
 
+=======
+    @GetMapping("/buscarNome")
+    public ResponseEntity<Produto> buscarPorNome(@RequestParam String nome) {
+        List <Produto> todos = listar();
+        for(int i = 0; i<todos.size(); i++){
+            if(Objects.equals(todos.get(i).getNome(), nome)){
+                return ResponseEntity.ok(todos.get(i));
+            }
+        }
+        return null;
+    }
+>>>>>>> 509f24208a7118dcc3b3cfe4ac8c2388311a2e27
     @DeleteMapping("/deletar/{id}")
     public ResponseEntity<Void> deletar(@PathVariable Long id) {
         produtoRepository.deleteById(id);

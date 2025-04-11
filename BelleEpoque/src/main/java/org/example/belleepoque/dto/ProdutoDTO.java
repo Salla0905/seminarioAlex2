@@ -7,11 +7,11 @@ public class ProdutoDTO {
     private String nome;
     private String descricao;
     private double preco;
-    private List<String> tamanhosDisponiveis;
+    private String tamanhosDisponiveis;
     private Integer estoque;
     private String imagemUrl;
 
-    public ProdutoDTO(Long id, String nome, String descricao, double preco, List<String> tamanhosDisponiveis, Integer estoque, String imagemUrl) {
+    public ProdutoDTO(Long id, String nome, String descricao, double preco, String tamanhosDisponiveis, Integer estoque, String imagemUrl) {
         this.id = id;
         this.nome = nome;
         this.descricao = descricao;
@@ -55,11 +55,11 @@ public class ProdutoDTO {
         this.preco = preco;
     }
 
-    public List<String> getTamanhosDisponiveis() {
+    public String getTamanhosDisponiveis() {
         return tamanhosDisponiveis;
     }
 
-    public void setTamanhosDisponiveis(List<String> tamanhosDisponiveis) {
+    public void setTamanhosDisponiveis(String tamanhosDisponiveis) {
         this.tamanhosDisponiveis = tamanhosDisponiveis;
     }
 

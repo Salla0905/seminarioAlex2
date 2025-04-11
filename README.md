@@ -86,7 +86,7 @@ As classes Java estão organizadas em:
 #### 🗂️ Modelo Conceitual do Banco de Dados
 Abaixo está o modelo conceitual do banco PostgreSQL usado na aplicação:
 
-![Modelo Conceitual](modelo%20conceitual.png)
+![Modelo Conceitual](modeloConceitual.png)
 
 
 ---

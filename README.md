@@ -1,6 +1,6 @@
 # 👗 Belle Époque – Loja de Roupas
 
-Este é o projeto **Belle Époque**, uma loja de roupas online desenvolvida por alunas do **2°E** como pojeto da matéria de DAD. A aplicação integra um front-end com HTML, CSS, JavaScript e Thymeleaf, um back-end em Java com Spring Boot, e um banco de dados PostgreSQL.
+Este é o projeto **Belle Époque**, uma loja de roupas online desenvolvida por alunas do **2°E** como projeto da matéria de DAD. A aplicação integra um front-end com HTML, CSS, JavaScript e Thymeleaf, um back-end em Java com Spring Boot, e um banco de dados PostgreSQL.
 
 ---
 

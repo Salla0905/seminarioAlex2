@@ -1,4 +1,4 @@
-package org.example.belleepoque.controller;
+package org.example.belleepoque.Controller;
 
 import org.example.belleepoque.dto.ProdutoDTO;
 import org.example.belleepoque.model.Produto;
@@ -9,6 +9,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Objects;
 import java.util.Optional;
 
 @RestController
@@ -40,9 +41,7 @@ public class ProdutoController {
         Optional<Produto> produto = produtoRepository.findById(id);
         return produto.map(ResponseEntity::ok).orElseGet(() -> ResponseEntity.notFound().build());
     }
-<<<<<<< HEAD
 
-=======
     @GetMapping("/buscarNome")
     public ResponseEntity<Produto> buscarPorNome(@RequestParam String nome) {
         List <Produto> todos = listar();
@@ -53,7 +52,6 @@ public class ProdutoController {
         }
         return null;
     }
->>>>>>> 509f24208a7118dcc3b3cfe4ac8c2388311a2e27
     @DeleteMapping("/deletar/{id}")
     public ResponseEntity<Void> deletar(@PathVariable Long id) {
         produtoRepository.deleteById(id);

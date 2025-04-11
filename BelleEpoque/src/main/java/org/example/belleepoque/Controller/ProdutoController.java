@@ -1,4 +1,4 @@
-package org.example.belleepoque.controller;
+package org.example.belleepoque.Controller;
 
 import org.example.belleepoque.dto.ProdutoDTO;
 import org.example.belleepoque.model.Produto;

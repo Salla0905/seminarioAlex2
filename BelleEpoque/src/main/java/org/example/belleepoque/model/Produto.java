@@ -5,6 +5,8 @@ import jakarta.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
+@Entity
+@Table(name = "produto")
 public class Produto {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -13,13 +15,15 @@ public class Produto {
     private String nome;
     private double preco;
     private String cor;
-    private List<String> tamanho = new ArrayList<>();
+    private String tamanho;
     private int quantEstoque;
     private String imagem;
     private int idSetor;
     private String descricao;
 
-    public Produto(Long id, String nome, double preco, String cor, List tamanho, int quantEstoque, String imagem, int idSetor, String descricao) {
+    public Produto(){}
+
+    public Produto(Long id, String nome, double preco, String cor, String tamanho, int quantEstoque, String imagem, int idSetor, String descricao) {
         this.id = id;
         this.nome = nome;
         this.preco = preco;
@@ -67,11 +71,11 @@ public class Produto {
         this.cor = cor;
     }
 
-    public List<String> getTamanho() {
+    public String getTamanho() {
         return tamanho;
     }
 
-    public void setTamanho(List tamanho) {
+    public void setTamanho(String tamanho) {
         this.tamanho = tamanho;
     }
 

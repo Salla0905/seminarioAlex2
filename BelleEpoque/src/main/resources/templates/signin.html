@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <form action="">
+        <form id="SignInForm" action="/login" method="post">
             <img src="../../resources/static/Search.png" alt="" class="lupa">
             <label for="pesquisa">
                 <input type="text" name="pesquisa" id="pesquisa" placeholder="Pesquisar...">
@@ -48,7 +48,7 @@
                 <input type="submit" value="Enviar">
             </botaoEnvio>
         </form>
-        <p>Já tem uma conta? <a href="login.jsp">Sign up</a></p>
+        <p>Já tem uma conta? <a href="login.html">Sign up</a></p>
     </login>
     <script>
         document.getElementById('SignInForm').addEventListener('submit', async function(e) {
@@ -66,7 +66,7 @@
                     headers: {
                         'Content-Type': 'application/x-www-form-urlencoded',
                     },
-                    body: `email=${encodeURIComponent(email)}&senha=${encodeURIComponent(senha)}`
+                    body: `nome=${encodeURIComponent(nome)}&email=${encodeURIComponent(email)}&tel=${encodeURIComponent(tel)}&senha=${encodeURIComponent(senha)}&senha2=${encodeURIComponent(senha2)}`
                 });
 
                 if (response.redirected) {

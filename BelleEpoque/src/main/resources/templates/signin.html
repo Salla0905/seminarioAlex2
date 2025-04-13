@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <form id="SignInForm" action="/login" method="post">
+        <form>
             <img src="../../resources/static/Search.png" alt="" class="lupa">
             <label for="pesquisa">
                 <input type="text" name="pesquisa" id="pesquisa" placeholder="Pesquisar...">
@@ -25,30 +25,20 @@
     <!--O sign in tá aí caso o usuario não tenha conta-->
     <login>
         <titulo>Cadastro</titulo>
-        <form action="">
-            <label for="nome">
-                <input type="text" name="nome" id="nome" minlength="5" maxlength="50" placeholder="digite seu nome" required>
-            </label>
-            <label for="email">
-                <input type="email" name="email" id="email" minlength="5" maxlength="50" placeholder="digite seu email" required>
-            </label>
-            <label for="tel">
-                <input type="tel" name="tel" id="tel" placeholder="digite seu telefone" required>
-            </label>
-            <label for="senha">
-                <input type="password" name="pass1" id="senha" placeholder="digite sua senha" minlength="8" maxlength="16" required>
-            </label>
-            <label for="senha2">
-                <input type="password" name="pass2" id="senha2" placeholder="Confirme sua senha" minlength="8" maxlength="16" required>
+        <form id = "SignInForm" action="/login" method="post">
+            <input type="text" name="nome" id="nome" minlength="5" maxlength="50" placeholder="digite seu nome" required>
+            <input type="email" name="email" id="email" minlength="5" maxlength="50" placeholder="digite seu email" required>
+            <input type="tel" name="tel" id="tel" placeholder="digite seu telefone" required>
+            <input type="password" name="pass1" id="senha" placeholder="digite sua senha" minlength="8" maxlength="16" required>
+            <input type="password" name="pass2" id="senha2" placeholder="Confirme sua senha" minlength="8" maxlength="16" required>
                 <!--Aqui vai precisar de uma verificação para ver se uma senha é igual a outra, de modo que caso não seja, o usuario deve 
                 digitar novamente-->
-            </label>
             <botaoEnvio>
                 <img src="../../../../../../DAD/Belle%20Époque/seminarioAlex2/Componentes%20do%20site/botão.png" alt="">
                 <input type="submit" value="Enviar">
             </botaoEnvio>
         </form>
-        <p>Já tem uma conta? <a href="login.html">Sign up</a></p>
+        <p>Já tem uma conta? <a href="loginPage.html">Sign up</a></p>
     </login>
     <script>
         document.getElementById('SignInForm').addEventListener('submit', async function(e) {

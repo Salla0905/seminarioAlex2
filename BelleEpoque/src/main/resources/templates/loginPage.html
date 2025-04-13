@@ -8,7 +8,7 @@
 </head>
 <body>
         <header>
-            <form id = "loginForm" action="/login" method="post">
+            <form>
                 <img src="../../resources/static/Search.png" alt="" class="lupa">
                 <label for="pesquisa">
                     <input type="text" name="pesquisa" id="pesquisa" placeholder="Pesquisar...">
@@ -25,13 +25,9 @@
     <!--O login tá ai caso o usuario já tenha conta-->
     <login>
         <titulo>Login</titulo>
-        <form action="">
-            <label for="email">
-                <input type="email" name="email" id="email" minlength="5" maxlength="50" placeholder="digite seu e-mail" required>
-            </label>
-            <label for="senha">
-                <input type="password" name="senha" id="senha" minlength="8" maxlength="16" placeholder="digite sua senha" required>
-            </label>
+        <form id = "loginForm" action="/login" method="post">
+            <input type="email" name="email" id="email" minlength="5" maxlength="50" placeholder="digite seu e-mail" required>
+            <input type="password" name="senha" id="senha" minlength="8" maxlength="16" placeholder="digite sua senha" required>
             <fieldset>
                 Esqueci a senha
             </fieldset>
@@ -68,6 +64,7 @@
                     alert('Erro ao tentar fazer login');
                 }
             });
+
         </script>
 </body>
 </html>

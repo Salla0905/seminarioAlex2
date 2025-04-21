@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <header>
+        <form>
+            <img src="../../../assets/Search.png" alt="" class="lupa">
+            <label for="pesquisa">
+                <input type="text" name="pesquisa" id="pesquisa" placeholder="Pesquisar...">
+            </label>
+        </form>
+        <img src="../../../assets/Belle Époque.png" alt="" class="Belle">
+        <div class="botoes">
+            <img src="../../../assets/Filter alt.png" alt="" class="filter">
+            <img src="../../../assets/Vector.png" alt="" class="bag">
+            <img src="../../../assets/User.png" alt="" class="user">
+        </div>
+    </header>
+
+    <br><br><br><br><br><br><br>
+
+    <div class="login">
+        <div class="titulo">Login</div>
+        <form id="loginForm" action="/login" method="post">
+            <input type="email" name="email" id="email" minlength="5" maxlength="50" placeholder="digite seu e-mail" required>
+            <input type="password" name="senha" id="senha" minlength="8" maxlength="16" placeholder="digite sua senha" required>
+            <fieldset>
+                Esqueci a senha
+            </fieldset>
+            <div class="botaoEnvio">
+                <img src="../../../assets/botão.png" alt="">
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+        <p>Não tem uma conta? <a href="signin.html">Sign in</a></p>
+    </div>
+</body>
+</html>

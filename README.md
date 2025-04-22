@@ -7,13 +7,13 @@ Este é o projeto **Belle Époque**, uma loja de roupas online desenvolvida por 
 ## 👤 Grupo
 - Grupo do 2° ano E formado por:
   - **Júlia Porfírio (n° 12):**
-    - GitHub: juliaporf
+    - GitHub: juliaporf (https://github.com/juliaporf)
     - Email: julia.porfirio@germinare.org.br
   - **Marianna Luna (n° 20):** 
-    - GitHub: Mariluna09
+    - GitHub: Mariluna09 (https://github.com/Mariluna09)
     - Email: marianna.luna@germinare.org.br
   - **Bruna Salla (n° 26):**
-    - GitHub: Salla0905
+    - GitHub: Salla0905 (https://github.com/Salla0905)
     - Email: bruna.salla@germinare.org.br
 
 ---

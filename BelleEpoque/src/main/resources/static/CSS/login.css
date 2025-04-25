@@ -100,6 +100,12 @@ google{
     padding-left: 10px;
     margin-bottom: 20px;
 }
+#senha2{
+    width: 250px;
+    height: 40px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
 botaoEnvio{
     margin: 30px;
     margin-top: 20px;
